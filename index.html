@@ -16,20 +16,20 @@
   <body>
     <div class="main">
       <div class="header">
-        <div class="name">
+        <a href="" class="name">
           <h1>BTM</h1>
-        </div>
+        </a>
         <div class="pages">
-          <div class="page">Chaussures</div>
-          <div class="page">Mobilier</div>
-          <div class="page">Fruits</div>
+          <a href="" class="page"><h3>Chaussures</h3></a>
+          <a href="" class="page"><h3>Mobilier</h3></a>
+          <a href="" class="page"><h3>Fruits</h3></a>
         </div>
         <div class="icons">
-          <div class="icon search">
+          <a href="" class="icon search">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="36"
+              height="36"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#000000"
@@ -40,12 +40,12 @@
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-          </div>
-          <div class="icon cart">
+          </a>
+          <a href="" class="icon cart">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="36"
+              height="36"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#000000"
@@ -59,11 +59,84 @@
                 d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"
               />
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       <div class="container">
-        <div class="breadcrumbs"></div>
+        <div class="breadcrumbs">Fruits > Agrumes</div>
+        <div class="content">
+          <div class="citron">
+            <img src="img/citron-min.png" alt="" />
+            <h4>Caractéristiques :</h4>
+            <ul>
+              <li>Vert,</li>
+              <li>Piquant,</li>
+              <li>Pleins de vitamines</li>
+            </ul>
+          </div>
+          <form class="buying">
+            <div class="buyHeader">
+              <div class="title">
+                <h2>Citron vert</h2>
+                <h3>Calibre 4/5</h3>
+              </div>
+              <div class="price"><h2>1€</h2></div>
+            </div>
+            <p class="descriptionCitron">
+              La lime, lime acide ou citron vert est un agrume. C'est le fruit
+              du limettier, arbuste de la famille des Rutacées, dont il existe
+              deux espèces : <br />Citrus latifola et Citrus aurantiifolia.
+            </p>
+            <hr class="sepBuying" />
+            <div class="buyButtons">
+              <div class="buyButton">
+                <div class="minus" id="minus">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="41"
+                    height="41"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </div>
+                <input
+                  type="number"
+                  class="currNb"
+                  id="currNb"
+                  name="currNb"
+                  value="1"
+                />
+                <div class="plus" id="plus">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="41"
+                    height="41"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </div>
+              </div>
+              <input
+                class="addToCart"
+                type="Submit"
+                value="Ajouter au panier"
+              />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
